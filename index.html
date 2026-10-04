@@ -1,10 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="utf-8">
-  <title>human</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>human — levande kommunikation och digitalisering</title>
+<meta name="description" content="human är en oas där Siri Maassen och Lars Lindgren hjälper organisationer att hålla kommunikationen levande när AI och digitalisering tar plats.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,460;9..144,560&family=Outfit:wght@340;480&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f3efe4;
+    --ink: #1c2822;
+    --moss: #2f4a3c;
+    --moss-soft: #3f6150;
+    --sand: #e4dcc8;
+    --clay: #8c6a45;
+    --line: rgba(28, 40, 34, 0.14);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #efe6d2 0%, transparent 55%),
+      radial-gradient(900px 500px at 110% 20%, #e7efe6 0%, transparent 50%),
+      var(--paper);
+    color: var(--ink);
+    font-family: Outfit, "Avenir Next", "Segoe UI", sans-serif;
+    font-weight: 340;
+    line-height: 1.6;
+    font-size: 1.05rem;
+  }
+  a { color: var(--moss); }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1.5rem;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 1.6rem 1.4rem 0;
+  }
+  .mark {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 560;
+    letter-spacing: -0.03em;
+    font-size: 1.35rem;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  nav { display: flex; gap: 1.25rem; font-size: 0.95rem; }
+  nav a { text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  main { max-width: 980px; margin: 0 auto; padding: 0 1.4rem 5rem; }
+  .hero { padding: 5.5rem 0 3.5rem; max-width: 16em; }
+  h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 460; letter-spacing: -0.03em; line-height: 1.15; }
+  h1 { font-size: clamp(2.7rem, 6vw, 4.4rem); margin: 0 0 1.2rem; }
+  .lede { font-size: 1.2rem; max-width: 36rem; margin: 0; }
+  section { padding: 3.2rem 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 2rem; margin: 0 0 1rem; }
+  .theme p { max-width: 40rem; }
+  .people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .person {
+    background: rgba(255, 252, 245, 0.55);
+    border: 1px solid var(--line);
+    border-radius: 1.25rem;
+    padding: 1.5rem 1.4rem 1.3rem;
+  }
+  .person h3 { margin: 0 0 0.2rem; font-size: 1.55rem; }
+  .role { color: var(--clay); margin: 0 0 0.9rem; font-size: 0.95rem; }
+  .offers { display: grid; gap: 1.1rem; }
+  article.offer {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 0.3rem 0;
+  }
+  .offer h3 { margin: 0 0 0.35rem; font-size: 1.35rem; }
+  .offer p { margin: 0; max-width: 40rem; }
+  .num {
+    font-family: Fraunces, Georgia, serif;
+    color: var(--moss-soft);
+    font-size: 1.1rem;
+    padding-top: 0.25rem;
+  }
+  footer {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 1.4rem 3rem;
+    color: var(--moss);
+    font-size: 0.95rem;
+  }
+  @media (max-width: 720px) {
+    .people, article.offer { grid-template-columns: 1fr; }
+    .hero { padding-top: 3.2rem; }
+    header { flex-direction: column; align-items: flex-start; }
+  }
+</style>
 </head>
 <body>
-  <h1>Hello, world</h1>
+<header>
+  <a class="mark" href="#top">human</a>
+  <nav>
+    <a href="#tema">Temat</a>
+    <a href="#vi">Vi</a>
+    <a href="#erbjudanden">Erbjudanden</a>
+  </nav>
+</header>
+<main id="top">
+  <div class="hero">
+    <h1>En oas mellan samtalet och systemet.</h1>
+    <p class="lede">human är Siri Maassen och Lars Lindgren. Vi hjälper organisationer att hålla kommunikationen levande när digitalisering och AI förändrar hur arbete, beslut och information rör sig.</p>
+  </div>
+
+  <section class="theme" id="tema">
+    <h2>Levande kommunikation är inte en mjuk kant.</h2>
+    <p>En standard, en modell eller ett nytt verktyg bärs av människor. Om samtalet plattas ut till en instruktion tappar förändringen sin mening. Om tekniken stannar i en presentation når den aldrig leveransen.</p>
+    <p>Siri arbetar med regenerativ kommunikation: samtal som ger tillbaka mer mening, lärande och uppmärksamhet än de tar. Lars arbetar med styrning och digitalisering där information ska kunna gå obruten, från beslut till det som faktiskt byggs och transporteras.</p>
+    <p>human är kopplingen mellan de två. Inte en färdig produkt, och inte en lista på gamla uppdrag vi hittat på. En plats att börja samtalet.</p>
+  </section>
+
+  <section id="vi">
+    <h2>Två bakgrunder, ett rum.</h2>
+    <div class="people">
+      <div class="person">
+        <h3>Siri Maassen</h3>
+        <p class="role">Regenerativ kommunikation</p>
+        <p>Omkring tjugo år i hållbarhetskommunikation. Hon har varit vice vd på The New Division, är suppleant i Stiftelsen The New Foundation och har gästföreläst på Berghs om kommunikation som relation i levande system. Mälardalens universitet är en tidigare arbetsplats.</p>
+        <p>Hon håller i samtal, workshops och promenader där svåra frågor får bli begripliga utan att förenklas sönder.</p>
+      </div>
+      <div class="person">
+        <h3>Lars Lindgren</h3>
+        <p class="role">Styrning och digitalisering</p>
+        <p>Strateg på Trafikverket, med verksamhetsstyrning, digitalisering och verksamhetsutveckling. Han skriver offentligt om obrutna informationsflöden i infrastrukturen, bland annat Peppol, digitala följesedlar och eFTI.</p>
+        <p>På sin egen sida beskriver han också en bakgrund i organisationsutveckling, pedagogik och lärande. Den här sidan låter den bakgrunden stå som hans egen berättelse, inte som en granskad meritförteckning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="erbjudanden">
+    <h2>Vad vi gör tillsammans.</h2>
+    <div class="offers">
+      <article class="offer">
+        <div class="num">01</div>
+        <div>
+          <h3>Samtalet runt skiftet</h3>
+          <p>En workshop när en organisation inför AI eller ett nytt digitalt arbetssätt och behöver ett språk som människorna faktiskt kan använda tillsammans. Syfte, oro och nästa steg får plats. Det är inte en verktygsdemo.</p>
+        </div>
+      </article>
+      <article class="offer">
+        <div class="num">02</div>
+        <div>
+          <h3>Från standard till mening</h3>
+          <p>Hjälp att göra informationsflöden, leveranser och nya digitala krav begripliga för dem som ska bära dem. Lars bidrar med flödet och styrningen. Siri med hur det berättas, hörs och tas emot.</p>
+        </div>
+      </article>
+      <article class="offer">
+        <div class="num">03</div>
+        <div>
+          <h3>Regenerativ kommunikation i praktiken</h3>
+          <p>För team som redan pratar hållbarhet, förändring eller teknik och vill att kommunikationen ska ge tillbaka mer än den tar: mer lärande, mer uppmärksamhet, mer gemensam riktning.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>human · Siri Maassen och Lars Lindgren</p>
+</footer>
 </body>
 </html>
